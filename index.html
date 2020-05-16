@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo de Aventura</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d4cbfde7f1.js" crossorigin="anonymous"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      
+    }
+    </script>
+    
+   
+    
+</head>
+
+<body>
+  <header>
+
+    <div id="main">
+    <span class="menu-icon" onclick="openNav()">
+      ☰</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">O que fazer?</a>
+        <a href="#contato">Contato</a>
+      </div>
+  </div>
+
+  
+
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">O que fazer?</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="titulos">
+      <h1 class="site-title">Bom dia!!!</h1>
+      <h2 class="site-subtitle">Aproveite esse momento!</h2>
+    </div>
+  </header>
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+    <figure class="avatar">
+      <img src="./img/chika.gif" alt="Dancando">
+    </figure>
+
+    <p>
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis non aut velit qui natus minus vel, sit
+      dolorum ratione quo, impedit deleniti iste nostrum doloribus quaerat fuga, consequuntur tempore?
+
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ex in, iure tempore maxime minima quasi soluta
+      iusto cum similique maiores totam aliquam veniam quo delectus fuga necessitatibus commodi! Distinctio?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum fugiat pariatur, rerum ullam alias voluptatibus
+      itaque eligendi aperiam illo enim sit ipsam, voluptas, nihil quia fuga sint nam tempore odit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae tempore labore enim quisquam debitis a
+      eveniet repudiandae magnam. Atque ex magni maiores obcaecati debitis illo necessitatibus numquam, quasi
+      accusantium.
+    </p>
+    <p>
+      Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+    </p>
+  </section>
+  <section class="portfolio container" id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div class="grid">
+
+      <div class="flip-card">
+
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/guaxinim.jpg" alt="Guaxinim">
+            <figcaption>Guaxinim</figcaption>
+          </figure>
+          <figure class="card-back">
+            <img class="img-portfolio" src="./img/guaxinim.gif" alt="Guaxinim">
+          </figure>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mimi.gif" alt=">Culinária">
+            <figcaption>Culinária</figcaption>
+          </figure>
+          <figure class="card-back">
+            <img class="img-portfolio" src="./img/limpar.gif" alt="Diversão">
+          </figure>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/aqua.gif" alt="Diversão">
+            <figcaption>Diversão</figcaption>
+          </figure>
+          <figure class="card-back">
+            <img class="img-portfolio" src="./img/kazuma.gif" alt="Diversão">
+          </figure>
+        </div>
+      </div>
+
+
+
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/vanessametonini">
+        <i class="fab fa-github-square"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/GuaxinimHu3dor">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/samuelaraldi/?hl=pt-br">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:vanessa.tonini@caelum.com.br">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
